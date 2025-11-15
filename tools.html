@@ -6,13 +6,64 @@
   <title>Creative Tools Aggregator</title>
 
   <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #6381ed;
+    }
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+      #mydiv {
+     
+      cursor: pointer;
+    }
+
+    #mydiv:hover {
+      color: #007BFF; 
+     
+    }
+    .logoSize {
+      height: 30px;
+      width: auto;
+    }
+    .h1-gradient {
+  font-size: 2.5em;
+  font-weight: bold;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+  </style>
+  <script>
+    function addtext(what){
+if (document.createTextNode){
+var mytext=document.createTextNode(what)
+document.getElementById("mydiv").appendChild(mytext)
+}
+} 
+  </script>
 </head>
 <body>
   
 
   <header>
     <div class="header">
-    <a href="index.html">
+    <a href="about.html">
     <img src="assets/img/Logo.png" alt="Homepage" height="100px" width="auto"></a>
     <h1>Creative Tools Aggregator</h1>
      <div class="auth-buttons">
@@ -38,6 +89,75 @@
 
   <main id="main">
     <!-- Page-specific content -->
+    <h1 align = "center" class="h1-gradient">Tool Categories</h1>
+    <table>
+    <thead>
+      <tr>
+        <th>Design Tools</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+
+
+
+<!-- <div id="mydiv" onClick="addtext(' A collaborative interface design tool for creating user interfaces and prototypes.')">Show:</div> -->
+    <tbody>
+      <tr>
+        <td><a href="https://www.figma.com/downloads/"> <img src="https://www.pixartprinting.it/blog/wp-content/uploads/2022/12/figma_logo.png" alt="Figma" class="logoSize" ></a></td>
+        <td>A collaborative interface design tool for creating user interfaces and prototypes.</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.canva.com/download/windows/"> <img src="https://1000logos.net/wp-content/uploads/2021/10/Canva-logo.jpg" alt="Canva" class="logoSize"></a></td>
+        <td>An easy-to-use graphic design platform for creating social media graphics, presentations, posters, and more.</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.adobe.com/sa_en/creativecloud.html?skwcid=AL!3085!3!760757000782!b!!g!!adobe%20download&mv=search&mv2=paidsearch&sdid=D4P81NYZ&ef_id=Cj0KCQiA5uDIBhDAARIsAOxj0CHqGdrDqP2ElZPQLuRI74ya4O4h2jrObJG76ElAXIoM7T_HofIf_0oaAk_MEALw_wcB:G:s&s_kwcid=AL!3085!3!760757000782!b!!g!!adobe%20download!22726169486!182315971875&gad_campaignid=22726169486"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/2101px-Adobe_XD_CC_icon.svg.png" alt="Adobe XD" class="logoSize"></a></td>
+        <td>A vector-based user experience design tool for web apps and mobile apps, enabling wireframing and prototyping.</td>
+      </tr>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Coding Tools</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Visual Studio Code</td>
+        <td>A lightweight but powerful source code editor with built-in support for JavaScript, TypeScript, and Node.js, along with a rich ecosystem of extensions.</td>
+      </tr>
+      <tr>
+        <td>GitHub</td>
+        <td>A web-based platform for version control and collaboration, allowing developers to host and review code, manage projects, and build software together.</td>
+      </tr>
+      <tr>
+        <td>CodePen</td>
+        <td>An online code editor and community for front-end developers to showcase their work and experiment with HTML, CSS, and JavaScript.</td>
+      </tr>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Video Tools</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adobe Premiere Pro</td>
+        <td>A professional video editing software used for film, TV, and web content creation.</td>
+      </tr>
+      <tr>
+        <td>Final Cut Pro</td>
+        <td>A powerful video editing application for Mac users, known for its advanced features and user-friendly interface.</td>
+      </tr>
+      <tr>
+        <td>DaVinci Resolve</td>
+        <td>A comprehensive video editing and color correction software used in post-production for films and TV shows.</td>
+      </tr>
+  </table>
+
   </main>
 
   <footer>
