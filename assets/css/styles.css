@@ -103,6 +103,140 @@ footer {
 table {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+/*  About Page  */
+
+
+main h1 {
+    margin-top: 20px;
+}
+
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+main p {
+    text-align: justify;
+}
+/* ===== About page layout ===== */
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* White card in the middle */
+.about-card {
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* About title */
+.about-card h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Paragraph spacing + nicer text */
+.about-card p {
+  margin-bottom: 12px;
+  text-align: justify;
+}
+/* Make the about text area narrower and centered */
+main {
+  max-width: 900px;
+  margin: 30px auto 60px auto;
+}
+
+/* Slightly softer line height for long reading */
+main p {
+  line-height: 1.8;
+}
+/* ===== Home page layout ===== */
+
+.home-page {
+  max-width: 1100px;
+  margin: 30px auto 60px auto;
+  padding: 0 20px;
+}
+
+/* Intro box */
+.intro-box {
+  background: #f7f7f7;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.intro-box h2 {
+  margin-bottom: 10px;
+}
+
+.intro-box p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* Hero-style button */
+.btn-hero {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #327bff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.btn-hero:hover {
+  background-color: #255fcc;
+}
+
+/* Section styling */
+.home-section {
+  margin-bottom: 35px;
+}
+
+.home-section h3 {
+  margin-bottom: 10px;
+}
+
+/* Category list */
+.category-list {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+/* Comparison table */
+.home-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.home-table th,
+.home-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.home-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+
 
 
 
