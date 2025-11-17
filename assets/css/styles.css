@@ -1,3 +1,16 @@
+/* === General layout === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+
+main {
+  padding: 20px;
+}
+
+
 /* Header and navigation */
 header {
   background-color: #333;
@@ -68,41 +81,109 @@ footer {
   margin-top: 40px;
 
 }
-.btn {
-    text-decoration: none; 
-    padding: 8px 16px; 
-    border-radius: 5px; 
-    font-weight: 600; 
-    transition: background-color 0.3s; 
+/* ===== Form styles ===== */
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
+
+.form-container h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.form-container p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.error-input {
+  border-color: #c62828;
+  background-color: #ffecec;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+}
+
+ /* Buttons */
+.btn-signin,
+.btn-signup,
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
 
 .btn-signin {
-    color: #ffffff; 
-    background-color: transparent; 
-    border: 1px solid #ccc; 
-}
-
-.btn-signin:hover {
-    background-color: #969494;
+  background-color: #337ab7;
+  color: white;
 }
 
 .btn-signup {
-    color: white; 
-    background-color: #007bff; 
-    border: 1px solid #007bff; 
+  background-color: #5cb85c;
+  color: white;
 }
 
-.btn-signup:hover {
-    background-color: #0056b3; 
+.btn-primary {
+  background-color: #337ab7;
+  color: white;
 }
-.auth-buttons {
-  margin-left: auto;
-    display: flex;
-    gap: 10px;
+
+.btn-signin:hover,
+.btn-signup:hover,
+.btn-primary:hover {
+  opacity: 0.9;
 }
-table {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+/* Messages under the form */
+.form-message {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
+
+.form-message.error {
+  color: #c62828;
+}
+
+.form-message.success {
+  color: #2e7d32;
+}
+
 /*  About Page  */
 
 
@@ -120,46 +201,7 @@ main {
 main p {
     text-align: justify;
 }
-/* ===== About page layout ===== */
 
-.about-page {
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
-}
-
-/* White card in the middle */
-.about-card {
-  max-width: 900px;
-  background-color: #ffffff;
-  padding: 30px 35px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-/* About title */
-.about-card h1 {
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-/* Paragraph spacing + nicer text */
-.about-card p {
-  margin-bottom: 12px;
-  text-align: justify;
-}
-/* Make the about text area narrower and centered */
-main {
-  max-width: 900px;
-  margin: 30px auto 60px auto;
-}
-
-/* Slightly softer line height for long reading */
-main p {
-  line-height: 1.8;
-}
 /* ===== Home page layout ===== */
 
 .home-page {
@@ -186,7 +228,7 @@ main p {
   line-height: 1.7;
 }
 
-/* Hero-style button */
+/*style button */
 .btn-hero {
   display: inline-block;
   padding: 10px 20px;
