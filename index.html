@@ -12,26 +12,22 @@
   <header>
     <div class="header">
       <a href="about.html">
-        <img src="assets/img/Logo.png" alt="Homepage" height="100" width="auto">
+        <img src="assets/img/Logo.png" id="Siz" alt="Homepage" height="100" width="auto">
       </a>
+      
       <h1>Creative Tools Aggregator</h1>
       <div class="auth-buttons">
         <a href="login.html" class="btn btn-signin">Log In</a>
         <a href="signup.html" class="btn btn-signup">Sign Up</a>
       </div>
+      
     </div>
+    <input type="button" onclick="changeSize()" value="Show Logo" />
+    <input type="button" onclick="OriginalSize()" value="Back to normal size" />
     <nav>
-      <ul>
+    <ul>
         <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="tools.html">Tools</a>
-          <ul class="dropdown">
-            <li><a href="tools.html#coding">Coding</a></li>
-            <li><a href="tools.html#design">Design</a></li>
-            <li><a href="tools.html#video">Video</a></li>
-            <li><a href="tools.html#writing">Writing</a></li>
-          </ul>
-        </li>
+        <li><a href="tools.html">Tools</a></li>
         <li><a href="about.html">About us</a></li>
       </ul>
     </nav>
@@ -60,15 +56,14 @@
     <section class="home-section">
       <h3>Main Tool Categories</h3>
       <ul class="category-list">
-        <li>Coding tools (VS Code, IntelliJ, GitHub)</li>
+        <li>Coding tools (VS Code, IntelliJ, CodePen)</li>
         <li>Design tools (Figma, Canva, Adobe XD)</li>
-        <li>Video & animation tools (Premiere Pro, DaVinci Resolve)</li>
-        <li>Writing & productivity tools (Notion, Google Docs)</li>
+        <li>Video & animation tools (Premiere Pro,Final Cut, DaVinci Resolve)</li>
       </ul>
     </section>
 
 
-    <!-- Example table -->
+
     <section class="home-section">
       <h3>Example Tool Comparison</h3>
       <table class="home-table">

@@ -103,3 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   setupAuthForms();
 });
+function changeSize(){
+document.getElementById("Siz").height="300";
+document.getElementById("Siz").width="300";
+}
+function OriginalSize() {
+document.getElementById("Siz").height="100";
+document.getElementById("Siz").width="100";
+  
+}
